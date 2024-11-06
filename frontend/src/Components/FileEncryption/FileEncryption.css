@@ -1,0 +1,90 @@
+.file-encryption-container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: #f9f9f9; */
+    border-radius: 10px; /* Rounded corners */
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  */
+}
+
+.file-upload-section {
+    margin-bottom: 20px;
+}
+
+.file-input {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc; /* Border for the input */
+    border-radius: 5px; /* Rounded corners */
+    /* width: calc(50% - 20px); */
+    /* width: 1000px; */
+}
+
+.file-input:focus {
+    border-color: #4CAF50; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+.encrypt-button,
+.download-button,
+.download-key-button {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+.switch-to-decrypt-button{
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.switch-to-decrypt-button:hover{
+    background-color: #0056b3;
+}
+
+.encrypt-button:hover,
+.download-button:hover,
+.download-key-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.encrypt-button:disabled,
+.download-button:disabled,
+.download-key-button:disabled,
+.switch-to-decrypt-button:disabled {
+    background-color: #ccc; /* Gray background for disabled state */
+    cursor: not-allowed;
+}
+
+.download-section {
+    margin-top: 20px; /* Space between sections */
+}
+
+.alert-message {
+    color: red; /* Alert message color */
+    margin-top: 10px; /* Space above alert messages */
+}
+
+@media (max-width: 768px) {
+    .file-input {
+        width: 100%; /* Full width on smaller screens */
+        margin-right: 0; /* No margin on the right */
+    }
+}

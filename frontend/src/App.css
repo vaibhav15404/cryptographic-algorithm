@@ -1,0 +1,13 @@
+/* .App{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* body {
+  cursor: none;
+} */
+html {
+  scroll-behavior: smooth;
+}

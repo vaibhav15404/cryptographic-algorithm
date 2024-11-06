@@ -1,0 +1,14 @@
+/* src/components/CustomCursor.css */
+.custom-cursor {
+    position: fixed;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ff6b6b; /* Cursor color */
+    box-shadow: 0 0 15px rgba(255, 107, 107, 0.8); /* Soft glow effect */
+    pointer-events: none; /* Ensures the custom cursor doesn’t block interactions */
+    transform: translate(-50%, -50%); /* Center the cursor */
+    transition: background-color 0.3s ease; /* Only smooth color transitions */
+    z-index: 9999;
+  }
+  

@@ -1,0 +1,79 @@
+.aes-container {
+  width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e1e1e; /* Slightly lighter dark background for container */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.aes-container h1 {
+  color: rgb(227, 225, 225); /* Light blue color for the title */
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #444;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+input:focus {
+  background-color: #555;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.encrypt-btn, .decrypt-btn {
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  background-color: #00bcd4; /* Light blue button */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.encrypt-btn:hover, .decrypt-btn:hover {
+  background-color: #0097a7;
+}
+
+.result {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #2c2c2c;
+  border-radius: 5px;
+  width: 100%;  /* Ensure the result box uses full width of the container */
+  word-wrap: break-word; /* Allow wrapping of long words */
+  overflow-wrap: break-word; /* Ensure long text wraps correctly */
+  white-space: pre-wrap; /* Preserve whitespace and wrap long lines */
+}
+
+.result h3 {
+  color: #00bcd4; /* Light blue heading */
+  margin-bottom: 10px;
+}
+
+.result p {
+  color: #fff;
+  padding: 5px;
+  background-color: #444;
+  border-radius: 5px;
+  word-wrap: break-word;
+  white-space: pre-wrap; /* Allow wrapping long text and preserve spaces */
+}

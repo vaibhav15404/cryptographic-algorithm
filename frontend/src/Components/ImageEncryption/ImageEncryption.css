@@ -1,0 +1,100 @@
+.image-encryption-container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+  
+.file-upload-section {
+    margin-bottom: 20px;
+}
+  
+.file-input {
+    padding: 10px;
+    margin-right: 10px;
+}
+  
+.encrypt-button,
+.decrypt-button,
+.read-more-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+  
+.encrypt-button:disabled,
+.decrypt-button:disabled,
+.read-more-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+  
+.encrypted-section,
+.decrypted-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    text-align: left;
+}
+  
+.encrypted-section h2,
+.decrypted-section h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+  
+.encrypted-image,
+.decrypted-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+.decrypted-image {
+    height: 40vh;
+    width: 40vw;
+    background-image: url("../../../../decrypted_image.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+  
+.encrypted-section p {
+    white-space: pre-wrap;
+    max-width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    text-align: left;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow-x: auto;
+}
+  
+.encrypted-section p strong {
+    font-weight: bold;
+}
+  
+.read-more-button {
+    width: fit-content;
+    padding: 5px 10px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+  
+.read-more-button:hover {
+    background-color: #1e87d2;
+}

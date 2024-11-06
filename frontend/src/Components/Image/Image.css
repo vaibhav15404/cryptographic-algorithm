@@ -1,0 +1,16 @@
+.Home-card-image{
+    width: 45vw;
+    height: 50vh;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.5s;
+    will-change: transform;
+    border: 5px solid white;
+  }
+  
+  .Home-card-image:hover {
+    box-shadow: 0px 30px 100px -10px rgba(212, 212, 212, 0.4);
+  }
+  

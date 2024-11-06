@@ -1,0 +1,223 @@
+/* .container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    background-color: aliceblue;
+    padding: 10px;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    width: 80vw;
+    margin: 20px;
+    background-color: #1b3284;
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.navbar-links ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    gap: 100px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.navbar-links ul li {
+    display: inline-block;
+}
+.navbar-links ul li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: rgb(229, 228, 228);
+    border-radius: 10px;
+    font-family: "Nunito", sans-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    position: relative;
+}
+.navbar-links ul li a::after {
+    content: '';
+    position: absolute;
+    border-radius: 10px;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(229, 228, 228);
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.3s ease-out;
+}
+.navbar-links ul li a:hover::after {
+    transform: scaleX(1);
+}
+.navbar-links ul li .active-link::after {
+    transform: scaleX(1);
+    background-color: rgb(229, 228, 228);
+}
+@media (max-width: 768px) {
+    .navbar {
+        width: 95vw;
+        height: 10vh;
+        padding: 15px;
+    }
+    .navbar-links ul {
+        gap: 50px;
+    }
+    .navbar-links ul li a {
+        font-size: 1em;
+        padding: 8px 12px;
+    }
+}
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+    }
+    .navbar-links ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .navbar-links ul li {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .navbar-links ul li a {
+        font-size: 0.9em;
+        padding: 8px 10px;
+    }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Navbar.css */
+
+
+  /* Container */
+  .container {
+    width: 100%;
+    background-color: #1e1e2f; /* Dark background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .navbar-logo-link{
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Navbar Logo */
+  .navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .navbar-logo Navlink{
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* Navbar Links */
+  .navbar-links ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .navbar-links ul li {
+    position: relative;
+  }
+  
+  /* Link Styles */
+  .navbar-links a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    transition: color 0.3s ease;
+    padding: 0.5rem;
+  }
+  
+  .navbar-links a:hover {
+    color: #ff6b6b; /* Hover effect - soft red */
+  }
+  
+  /* Active Link Style */
+  .active-link {
+    color: #ff6b6b;
+    font-weight: bold;
+  }
+  
+  /* Underline on Hover */
+  .navbar-links a::before {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ff6b6b;
+    transition: width 0.3s ease;
+  }
+  
+  .navbar-links a:hover::before {
+    width: 100%;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar-links ul {
+      flex-direction: column;
+      background-color: #2a2a3d;
+      padding: 1rem;
+      border-radius: 8px;
+      gap: 1rem;
+    }
+  
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .navbar-logo {
+      margin-bottom: 1rem;
+    }
+  }
+  
